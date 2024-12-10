@@ -184,6 +184,8 @@ return {
       local servers = {
         clangd = {},
         deno = {},
+        hadolint = {},
+        dockerls = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
