@@ -1,6 +1,10 @@
 return {
   {
     'toppair/peek.nvim',
+    dependencies = {
+      'williamboman/mason.nvim',
+      'WhoIsSethDaniel/mason-tool-installer.nvim',
+    },
     build = 'deno task --quiet build:fast',
     keys = {
       {
