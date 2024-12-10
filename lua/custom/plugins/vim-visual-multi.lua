@@ -10,7 +10,7 @@ return {
     -- Add custom mappings
     vim.g.VM_maps = {
       ['Exit'] = '<C-c>',
-      ['Find Under'] = '<C-d>',
+      ['Find Under'] = '<C-n>',
       ['Select Cursor Down'] = '<M-C-j>',
       ['Select Cursor Up'] = '<M-C-k>',
     }
