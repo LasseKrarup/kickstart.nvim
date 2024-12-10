@@ -182,7 +182,10 @@ return {
       local vue_language_server_path = mason_registry.get_package('vue-language-server'):get_install_path() .. '/node_modules/@vue/language-server'
 
       local servers = {
-        -- clangd = {},
+        clangd = {},
+        deno = {},
+        hadolint = {},
+        dockerls = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
@@ -205,7 +208,9 @@ return {
           filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
         },
         volar = {},
-        tailwindcss = {},
+        tailwindcss = {
+          filetypes = { 'css', 'scss', 'html', 'javascript', 'typescript', 'vue' },
+        },
 
         lua_ls = {
           -- cmd = {...},

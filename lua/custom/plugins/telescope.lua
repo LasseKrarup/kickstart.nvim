@@ -63,6 +63,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
           },
           n = {
             ['<c-c>'] = actions.close,
+            ['s'] = 'select_vertical',
           },
         },
       },
