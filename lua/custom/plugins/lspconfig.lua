@@ -206,7 +206,9 @@ return {
           filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
         },
         volar = {},
-        tailwindcss = {},
+        tailwindcss = {
+          filetypes = { 'css', 'scss', 'html', 'javascript', 'typescript', 'vue' },
+        },
 
         lua_ls = {
           -- cmd = {...},
