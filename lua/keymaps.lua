@@ -34,3 +34,6 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 
 -- Change CWD keymap
 vim.keymap.set('n', '<leader>.', '<cmd>cd %:h<CR>', { desc = 'Set CWD here (.)' })
+
+-- Windows style save
+vim.keymap.set({ 'i', 'n' }, '<C-s>', '<cmd>w<CR>', { desc = 'Save current buffer' })
