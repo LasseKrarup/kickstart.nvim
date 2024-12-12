@@ -63,6 +63,11 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- If on Windows...
+if (vim.fn.has 'win32' or vim.fn.has 'win64') and not vim.fn.has 'wsl' then
+  vim.opt.shell = 'powershell.exe' -- Make powershell the terminal when entering terminal mode
+end
+
 -- Standard indent width
 vim.o.shiftwidth = 2
 vim.o.tabstop = 2
