@@ -1,7 +1,10 @@
 return {
   {
-    'Exafunction/codeium.vim',
-    event = 'BufEnter',
+    'Exafunction/codeium.nvim',
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'hrsh7th/nvim-cmp',
+    },
     config = function()
       vim.g.codeium_disable_bindings = 1
       -- Change '<C-g>' here to any keycode you like.
@@ -18,6 +21,10 @@ return {
       vim.keymap.set('i', '<c-x>', function()
         return vim.fn['codeium#Clear']()
       end, { expr = true, silent = true })
+
+      require('codeium').setup {
+        enable_chat = 1,
+      }
     end,
   },
 }
