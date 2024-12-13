@@ -39,5 +39,5 @@ vim.keymap.set('n', '<leader>.', '<cmd>cd %:h<CR>', { desc = 'Set CWD here (.)' 
 vim.keymap.set({ 'i', 'n' }, '<C-s>', '<cmd>w<CR>', { desc = 'Save current buffer' })
 
 -- Change some awkward keybindings that dont fit well on Nordic keyboards
-vim.keymap.set('n', '#', '^', { desc = 'Move cursor to start of line' })
-vim.keymap.set('n', '¤', '$', { desc = 'Move cursor to end of line' })
+vim.keymap.set('n', '#', '^', { desc = 'Move cursor to start of line', noremap = true })
+vim.keymap.set('n', '¤', '$', { desc = 'Move cursor to end of line', noremap = true })
