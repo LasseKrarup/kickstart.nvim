@@ -12,5 +12,8 @@ return {
   config = function()
     -- open as a split
     vim.keymap.set('n', '<leader>g', '<cmd>Neogit cwd=%:p:h<CR>', { desc = 'Open [G]it' })
+    require('neogit').setup {
+      process_spinner = false,
+    }
   end,
 }
