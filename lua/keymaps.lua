@@ -38,6 +38,10 @@ vim.keymap.set('n', '<leader>.', '<cmd>cd %:h<CR>', { desc = 'Set CWD here (.)' 
 -- Windows style save
 vim.keymap.set({ 'i', 'n' }, '<C-s>', '<cmd>w<CR>', { desc = 'Save current buffer' })
 
+-- Copy line down/up
+vim.keymap.set('n', '<M-S-j>', '"ayy"ap', { desc = 'Copy line down' })
+vim.keymap.set('n', '<M-S-k>', '"ayy"aP', { desc = 'Copy line up' })
+
 -- Change some awkward keybindings that dont fit well on Nordic keyboards
 vim.keymap.set('n', '#', '^', { desc = 'Move cursor to start of line', noremap = true })
 vim.keymap.set('n', '¤', '$', { desc = 'Move cursor to end of line', noremap = true })
