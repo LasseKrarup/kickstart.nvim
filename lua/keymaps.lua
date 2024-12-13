@@ -42,6 +42,9 @@ vim.keymap.set({ 'i', 'n' }, '<C-s>', '<cmd>w<CR>', { desc = 'Save current buffe
 vim.keymap.set('n', '<M-S-j>', '"ayy"ap', { desc = 'Copy line down' })
 vim.keymap.set('n', '<M-S-k>', '"ayy"aP', { desc = 'Copy line up' })
 
+-- Line breaks in insert mode
+vim.keymap.set('i', '<S-enter>', '<esc>o', { desc = 'Open new line from insert mode' })
+
 -- Change some awkward keybindings that dont fit well on Nordic keyboards
 vim.keymap.set('n', '#', '^', { desc = 'Move cursor to start of line', noremap = true })
 vim.keymap.set('n', '¤', '$', { desc = 'Move cursor to end of line', noremap = true })
