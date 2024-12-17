@@ -9,6 +9,7 @@ return {
     -- "ibhagwan/fzf-lua",              -- optional
     -- "echasnovski/mini.pick",         -- optional
   },
+  enabled = false,
   config = function()
     -- open as a split
     vim.keymap.set('n', '<leader>g', '<cmd>Neogit cwd=%:p:h<CR>', { desc = 'Open [G]it' })
